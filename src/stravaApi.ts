@@ -12,7 +12,7 @@ export default class StravaApi {
   }
 
   async getActivities(params?: any) {
-    return await this.requestWithPagination('athlete/activities', params);
+    return await this.requestWithPagination('activities', params);
   }
 
   async requestWithPagination(url: string, params?: any) {
